@@ -104,8 +104,11 @@ function App() {
                 {/* <input type='checkbox' onChange={toggleTheme} checked={isDarkTheme} /> */}
                 {/* <span className='slider-label'>Switch to {!isDarkTheme ? 'dark mode' : 'light mode'}</span> */}
                 <div className='relative'>
-                  <div className='absolute top-10 aspect-square bg-white/10 backdrop-blur-lg h-96 left-10 p-16 flex justify-center items-center rounded-4xl overflow-hidden z-30'>
+                  <div className='absolute top-10 aspect-square bg-white/10 backdrop-blur-lg h-96 left-10 p-16 flex flex-col justify-center items-center rounded-4xl overflow-hidden z-30'>
                     <p>Your ultimate gaming hub: track stats, find teammates, join tournaments, and level up your skills.</p>
+                    <button className='px-6 py-2 mt-10 border border-zinc-950 rounded-4xl hover:cursor-pointer hover:bg-lime-400/50'>
+                      More
+                    </button>
                   </div>
                 </div>
               </div>

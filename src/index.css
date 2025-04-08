@@ -20,8 +20,6 @@
     --content-padding: 4rem;
 }
 
-
-
 [data-theme="dark"] {
     --color-text: #ffffff;
     --color-bg: #000000;
@@ -29,9 +27,6 @@
     --color-link: #ffffff;
     --color-link-hover: #ff0080;
 }
-
-
-
 
 body {
     margin: 0;
