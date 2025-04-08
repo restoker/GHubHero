@@ -32,7 +32,7 @@ export class BlockGeometry {
         const gltf = await loader.loadAsync(file, (progress) => {
             console.log((progress.loaded / progress.total * 100) + '% blocks loaded');
         });
-        //console.log(gltf);
+        console.log(gltf);
 
         const bottomBlock = this.findGeometry(gltf, 'Square_Base');
         const bottomQuart = this.findGeometry(gltf, 'Quart_Base');
