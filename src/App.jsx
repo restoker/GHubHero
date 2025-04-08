@@ -71,7 +71,7 @@ function App() {
                 </div>
                 <div className='bg-zinc-950 text-white flex justify-evenly relative'>
                   <div className='flex flex-col justify-evenly'>
-                    <h1 className='text-6xl'>g:hub</h1>
+                    <h1 className='text-9xl font-jersey'>g:hub</h1>
                     <p>Everything you need for <br /> victory-all in one place!</p>
                   </div>
                   <div className='flex items-end py-16 px-5 text-3xl'>
