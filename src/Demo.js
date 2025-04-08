@@ -17,7 +17,8 @@ export class Demo {
     static firstRenderDone = false;
     canvas;
     renderer;
-    camera = new PerspectiveCamera(20, 1, 0.1, 500);
+    camera = new PerspectiveCamera(15, 1, 0.1, 500);
+    // camera = new PerspectiveCamera(20, 1, 0.5, 500);
     controls;
     post;
     scene = new Scene();

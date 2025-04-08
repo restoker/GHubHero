@@ -9,7 +9,6 @@ function App() {
   const [isGPUAvailable, setIsGPUAvailable] = useState(WebGPU.isAvailable());
 
   useEffect(() => {
-
     document.body.classList.add('loading');
 
     const interval = setInterval(() => {
@@ -21,25 +20,16 @@ function App() {
     }, 100);
   }, []);
 
-  const toggleTheme = () => {
-    setIsDarkTheme(prevTheme => !prevTheme);
+  const toggleTheme = (theme) => {
+    if (isDarkTheme === theme) return;
+    // setIsDarkTheme(prevTheme => !prevTheme);
+    setIsDarkTheme(prevTheme => theme);
     document.documentElement.setAttribute('data-theme', isDarkTheme ? 'light' : 'dark');
     Demo.setTheme(isDarkTheme ? 'light' : 'dark');
   };
 
   return (
     <>
-      {/* <header className="frame"> */}
-      {/* <h1 className="frame__title">BatchedMesh & Post Processing by <a href="https://www.ulucode.com/" target="_blank">Christophe Choffel</a></h1> */}
-      {/* <a className="frame__back" href="https://tympanus.net/codrops/?p=81678">Article</a> */}
-      {/* <a className="frame__archive" href="https://tympanus.net/codrops/demos/">All demos</a> */}
-      {/* <a className="frame__github" href="https://github.com/ULuIQ12/codrops-batchedmesh">GitHub</a> */}
-      {/* <nav className="frame__tags"> */}
-      {/* <a href="https://tympanus.net/codrops/demos/?tag=3d">#3d</a>
-          <a href="https://tympanus.net/codrops/demos/?tag=three-js">#three.js</a>
-          <a href="https://tympanus.net/codrops/demos/?tag=webgpu">#webgpu</a> */}
-      {/* </nav> */}
-      {/* </header> */}
 
       <div className="w-svw flex flex-col relative z-50 bg-zinc-950">
         {/* <div className='demo__infos__container'> */}
@@ -60,10 +50,16 @@ function App() {
                     <img src="/img/logo.svg" alt="" srcset="" />
                   </div>
                   <div className='flex'>
-                    <div className='bg-black rounded-full size-14 flex justify-center items-center'>
+                    <div
+                      className='bg-black rounded-full size-14 flex justify-center items-center hover:cursor-pointer'
+                      onClick={() => toggleTheme(true)}
+                    >
                       <div className='size-6 rounded-md bg-white'></div>
                     </div>
-                    <div className='bg-lime-500 rounded-full size-14 flex justify-center items-center ml-2'>
+                    <div
+                      className='bg-lime-500 rounded-full size-14 flex justify-center items-center ml-2 hover:cursor-pointer'
+                      onClick={() => toggleTheme(false)}
+                    >
                       <div className='size-6 rounded-md bg-white'></div>
                     </div>
                   </div>

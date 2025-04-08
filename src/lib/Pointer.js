@@ -3,7 +3,6 @@ import { uniform } from "three/src/nodes/TSL.js";
 import { Plane, Raycaster, Vector2, Vector3 } from "three/webgpu";
 // import { uniform, WebGPURenderer } from "three/webgpu";
 
-
 /**
  * Helper class to handle pointer position and "down" with output exposed in vector3 and uniforms
  */
