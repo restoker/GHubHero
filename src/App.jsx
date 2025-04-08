@@ -54,34 +54,60 @@ function App() {
               </div>
             }
             {isDemoReady &&
-              <div className='w-full'>
-                <div className='bg-gray-100 flex justify-between w-full'>
+              <div className=''>
+                <div className='bg-gray-100 flex justify-between items-center h-30 px-6'>
                   <div>
                     <img src="/img/logo.svg" alt="" srcset="" />
                   </div>
-                  <div>Botones</div>
+                  <div className='flex'>
+                    <div className='bg-black rounded-full size-14 flex justify-center items-center'>
+                      <div className='size-6 rounded-md bg-white'></div>
+                    </div>
+                    <div className='bg-lime-500 rounded-full size-14 flex justify-center items-center ml-2'>
+                      <div className='size-6 rounded-md bg-white'></div>
+                    </div>
+                  </div>
                   <div>Support</div>
                 </div>
-                <div className='bg-zinc-950 w-full text-white flex mx-10'>
+                <div className='bg-zinc-950 text-white flex justify-evenly relative'>
                   <div className='flex flex-col justify-evenly'>
                     <h1 className='text-6xl'>g:hub</h1>
                     <p>Everything you need for <br /> victory-all in one place!</p>
                   </div>
-                  <div className='flex'>
+                  <div className='flex items-end py-16 px-5 text-3xl'>
                     <p>
                       Play.
                       <br />
                       Analize.
                     </p>
-                    <img className='' src="/img/line2.svg" alt="" />
+                    <img className='' src="/img/line1.svg" alt="linea-1" />
                     <p>Win.</p>
                   </div>
-                  <img src="/img/lines.svg" alt="" className='' />
-                  <div></div>
-                  <div></div>
+                  <div>
+                    <img src="/img/lines.svg" alt="lineas" className='' />
+                  </div>
+                  <div className='flex flex-col justify-between py-16'>
+                    <div className='flex justify-evenly'>
+                      <p>Go to your gaming <br /> headquarters</p>
+                      <p className='text-3xl bg-gradient-to-r from-lime-600 via-lime-400 to-gray-100 text-transparent bg-clip-text'>Start now</p>
+                    </div>
+                    <div>
+                      <img src="/img/line2.svg" alt="linea-2" className='' />
+                    </div>
+                    <div className='flex'>
+                      <p>Home</p>
+                      <p>Stats</p>
+                      <p>Community</p>
+                    </div>
+                  </div>
                 </div>
                 {/* <input type='checkbox' onChange={toggleTheme} checked={isDarkTheme} /> */}
                 {/* <span className='slider-label'>Switch to {!isDarkTheme ? 'dark mode' : 'light mode'}</span> */}
+                <div className='relative'>
+                  <div className='absolute top-10 aspect-square bg-white/10 backdrop-blur-lg h-96 left-10 p-16 flex justify-center items-center rounded-4xl overflow-hidden z-30'>
+                    <p>Your ultimate gaming hub: track stats, find teammates, join tournaments, and level up your skills.</p>
+                  </div>
+                </div>
               </div>
             }
           </>
