@@ -63,7 +63,7 @@ const Hero = ({ toggleTheme, isDemoReady }) => {
                 opacity: 0,
             }, '-=0.1')
             .from(lastSection.current, {
-                yPercent: -50,
+                yPercent: -20,
                 opacity: 0,
             }, '-=0.1')
         // .from()
@@ -150,8 +150,8 @@ const Hero = ({ toggleTheme, isDemoReady }) => {
                 </div>
                 {/* <input type='checkbox' onChange={toggleTheme} checked={isDarkTheme} /> */}
                 {/* <span className='slider-label'>Switch to {!isDarkTheme ? 'dark mode' : 'light mode'}</span> */}
-                <div ref={lastSection} className='relative'>
-                    <div className='absolute top-10 aspect-square bg-white/10 backdrop-blur-lg h-96 left-10 p-16 flex flex-col justify-center items-center rounded-4xl overflow-hidden z-30'>
+                <div className='relative'>
+                    <div ref={lastSection} className='absolute top-10 aspect-square bg-white/10 backdrop-blur-lg h-96 left-10 p-16 flex flex-col justify-center items-center rounded-4xl overflow-hidden z-30'>
                         <img className='absolute' src="/img/image1.png" alt="imagen1" />
                         <img className='absolute' src="/img/image2.png" alt="imagen2" />
                         <img className='absolute' src="/img/image3.png" alt="imagen3" />
