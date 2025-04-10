@@ -137,7 +137,7 @@ const Hero = ({ toggleTheme, isDemoReady }) => {
                         </div>
                         <div ref={navMenu} className='flex justify-evenly'>
                             <p className='relative'>
-                                Home <span className='absolute border border-white rounded-4xl -top-5 px-3 text-left'>01</span>
+                                Home <span className='absolute border border-white rounded-4xl -top-5 px-3 text-left bg-gradient-to-br from-lime-500 to-white bg-clip-text text-transparent'>01</span>
                             </p>
                             <p className='relative'>
                                 Stats <span className='absolute border border-white rounded-4xl -top-5 px-3 text-left'>02</span>
@@ -152,9 +152,9 @@ const Hero = ({ toggleTheme, isDemoReady }) => {
                 {/* <span className='slider-label'>Switch to {!isDarkTheme ? 'dark mode' : 'light mode'}</span> */}
                 <div className='relative'>
                     <div ref={lastSection} className='absolute top-10 aspect-square bg-white/10 backdrop-blur-lg h-96 left-10 p-16 flex flex-col justify-center items-center rounded-4xl overflow-hidden z-30'>
-                        <img className='absolute' src="/img/image1.png" alt="imagen1" />
-                        <img className='absolute' src="/img/image2.png" alt="imagen2" />
-                        <img className='absolute' src="/img/image3.png" alt="imagen3" />
+                        <img className='absolute top-4' src="/img/image1.png" alt="imagen1" />
+                        <img className='absolute bottom-9 left-5' src="/img/image2.png" alt="imagen2" />
+                        <img className='absolute bottom-20 right-5' src="/img/image3.png" alt="imagen3" />
                         <p>Your ultimate gaming hub: track stats, find teammates, join tournaments, and level up your skills.</p>
                         <button className='px-6 py-2 mt-10 border border-zinc-950 rounded-4xl hover:cursor-pointer hover:bg-lime-400/50'>
                             More

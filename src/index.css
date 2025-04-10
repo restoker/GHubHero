@@ -3,11 +3,11 @@
     src: url("./fonts/Jersey15-Regular.woff2") format("woff2")
 }
 
+@import "tailwindcss";
+
 @theme {
     --font-jersey: "Jersey", sans-serif;
 }
-
-@import "tailwindcss";
 
 :root {
     font-size: 12px;
